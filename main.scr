@@ -1,0 +1,64 @@
+Script started on Tue 12 Feb 2019 02:04:10 PM PST
+]0;cs1c@cs1c-VirtualBox ~/Desktop/hw03[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/hw03 $[00m date
+Tue Feb 12 14:04:13 PST 2019
+]0;cs1c@cs1c-VirtualBox ~/Desktop/hw03[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/hw03 $[00m ls -l
+total 212
+-rw-r--r-- 1 cs1c cs1c    227 Jan 31 12:38 CMakeLists.txt
+-rw-r--r-- 1 cs1c cs1c    397 Jan 31 12:06 Date.cpp
+-rw-r--r-- 1 cs1c cs1c    334 Jan 31 21:30 Date.h
+-rw-r--r-- 1 cs1c cs1c   1548 Jan 31 12:12 employee.cpp
+-rw-r--r-- 1 cs1c cs1c    889 Jan 31 21:30 employee.h
+-rwxrwxr-x 1 cs1c cs1c 169336 Feb 12 13:58 [0m[01;32mmain[0m
+-rw-r--r-- 1 cs1c cs1c   2122 Jan 31 12:43 main.cpp
+-rw-rw-r-- 1 cs1c cs1c      0 Feb 12 14:04 main.scr
+-rw-rw-r-- 1 cs1c cs1c    771 Feb 12 13:57 makefile
+-rw-r--r-- 1 cs1c cs1c   1403 Jan 31 12:31 Programmer.cpp
+-rw-r--r-- 1 cs1c cs1c    738 Jan 31 21:30 Programmer.h
+-rw-r--r-- 1 cs1c cs1c   1270 Jan 31 12:39 SoftwareArchitect.cpp
+-rw-r--r-- 1 cs1c cs1c    733 Jan 31 21:31 SoftwareArchitect.h
+]0;cs1c@cs1c-VirtualBox ~/Desktop/hw03[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/hw03 $[00m make a;[Kll
+g++ -std=c++14 -Wall -g -c Date.cpp -o Date.o
+g++ -std=c++14 -Wall -g -c employee.cpp -o employee.o
+g++ -std=c++14 -Wall -g -c Programmer.cpp -o Programmer.o
+g++ -std=c++14 -Wall -g -c SoftwareArchitect.cpp -o SoftwareArchitect.o
+g++ -std=c++14 -Wall -g main.cpp -o main Date.o employee.o Programmer.o SoftwareArchitect.o
+]0;cs1c@cs1c-VirtualBox ~/Desktop/hw03[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/hw03 $[00m ls -l
+total 516
+-rw-r--r-- 1 cs1c cs1c    227 Jan 31 12:38 CMakeLists.txt
+-rw-r--r-- 1 cs1c cs1c    397 Jan 31 12:06 Date.cpp
+-rw-r--r-- 1 cs1c cs1c    334 Jan 31 21:30 Date.h
+-rw-rw-r-- 1 cs1c cs1c  37288 Feb 12 14:04 Date.o
+-rw-r--r-- 1 cs1c cs1c   1548 Jan 31 12:12 employee.cpp
+-rw-r--r-- 1 cs1c cs1c    889 Jan 31 21:30 employee.h
+-rw-rw-r-- 1 cs1c cs1c  86776 Feb 12 14:04 employee.o
+-rwxrwxr-x 1 cs1c cs1c 169336 Feb 12 14:04 [0m[01;32mmain[0m
+-rw-r--r-- 1 cs1c cs1c   2122 Jan 31 12:43 main.cpp
+-rw-rw-r-- 1 cs1c cs1c      0 Feb 12 14:04 main.scr
+-rw-rw-r-- 1 cs1c cs1c    771 Feb 12 13:57 makefile
+-rw-r--r-- 1 cs1c cs1c   1403 Jan 31 12:31 Programmer.cpp
+-rw-r--r-- 1 cs1c cs1c    738 Jan 31 21:30 Programmer.h
+-rw-rw-r-- 1 cs1c cs1c  90088 Feb 12 14:04 Programmer.o
+-rw-r--r-- 1 cs1c cs1c   1270 Jan 31 12:39 SoftwareArchitect.cpp
+-rw-r--r-- 1 cs1c cs1c    733 Jan 31 21:31 SoftwareArchitect.h
+-rw-rw-r-- 1 cs1c cs1c  88024 Feb 12 14:04 SoftwareArchitect.o
+]0;cs1c@cs1c-VirtualBox ~/Desktop/hw03[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/hw03 $[00m ./main
+
+Employee : 
+Jimmy Fallon  12345  949-555-1234  40  M  Comedian  100000  8/31/2014
+Stephan Colbert  12346  310-555-5555  51  M  Comedian  70123  5/8/2015
+
+Programmer : 
+Jimmy Fallon  12345  949-555-1234  40  M  Comedian  100000  8/31/2014
+Jimmy Fallon  5432122  Joe Boss  4  Yes No
+Stephan Colbert  12346  310-555-5555  51  M  Comedian  70123  5/8/2015
+Stephan Colbert  6543222  Mary Leader  7  Yes Yes
+
+Software Architect : 
+Jimmy Fallon  12345  949-555-1234  40  M  Comedian  100000  8/31/2014
+Jimmy Fallon  5432122  Joe Boss  4  7
+Stephan Colbert  12346  310-555-5555  51  M  Comedian  70123  5/8/2015
+Stephan Colbert  6543222  Mary Leader  7  12
+]0;cs1c@cs1c-VirtualBox ~/Desktop/hw03[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/hw03 $[00m exit
+exit
+
+Script done on Tue 12 Feb 2019 02:04:31 PM PST
